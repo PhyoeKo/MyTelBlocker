@@ -4,7 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.mytelblocker.mm.BlacklistActivity;
+import com.mytelblocker.mm.activity.BlacklistActivity;
 
 public class BootReceiver extends BroadcastReceiver {
     @Override

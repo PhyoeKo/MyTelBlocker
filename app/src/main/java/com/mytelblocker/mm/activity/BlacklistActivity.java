@@ -6,7 +6,7 @@
  * http://www.gnu.org/licenses/gpl.html
  */
 
-package com.mytelblocker.mm;
+package com.mytelblocker.mm.activity;
 
 import android.Manifest;
 import android.content.Intent;
@@ -16,20 +16,29 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.CompoundButton;
+import android.widget.LinearLayout;
 import android.widget.ToggleButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.mytelblocker.mm.R;
+import com.mytelblocker.mm.adapter.MilitaryDataListAdapter;
+import com.mytelblocker.mm.model.DataHeader;
+import com.mytelblocker.mm.model.MilitaryData;
 import com.mytelblocker.mm.preference.AppPreference;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class BlacklistActivity extends AppCompatActivity {
-
+    MilitaryDataListAdapter militaryDataListAdapter = new MilitaryDataListAdapter();
+    RecyclerView rvList;
+    private ArrayList<Object> fuckingMilitaryDataList = new ArrayList<>();
     ToggleButton toggleService;
     AppPreference appPreference;
 
@@ -39,7 +48,10 @@ public class BlacklistActivity extends AppCompatActivity {
         setContentView(R.layout.activity_blacklist);
         requestPermissions();
         toggleService = findViewById(R.id.toggle);
+        rvList = findViewById(R.id.rv_list);
+        rvList.setAdapter(militaryDataListAdapter);
         appPreference = new AppPreference(getApplicationContext());
+        loadData();
 
         toggleService.setChecked(appPreference.getServiceStatus());
         toggleService.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -94,5 +106,17 @@ public class BlacklistActivity extends AppCompatActivity {
 
     public void onAbout(MenuItem item) {
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/eaglx/CallBlocker")));
+    }
+
+
+    private void loadData() {
+        for (int i = 0; i < 100; i++) {
+            if (i % 2 == 0) {
+                fuckingMilitaryDataList.add(new DataHeader("HEADER"));
+            } else {
+                fuckingMilitaryDataList.add(new MilitaryData("ENGLISH", "MYANMAR"));
+            }
+        }
+        militaryDataListAdapter.setData(fuckingMilitaryDataList);
     }
 }

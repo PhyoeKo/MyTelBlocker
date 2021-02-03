@@ -11,9 +11,6 @@ public class AppPreference {
 
     private SharedPreferences mSharedPreferences;
 
-    public static final String KEY_SERVICE= "KEY_SERVICE";
-
-
     public AppPreference(Context context) {
         super();
         mSharedPreferences = context.getSharedPreferences(context.getString(R.string.app_name), Context.MODE_PRIVATE);

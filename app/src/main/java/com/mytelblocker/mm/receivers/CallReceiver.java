@@ -28,8 +28,8 @@ import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import com.mytelblocker.mm.BlacklistActivity;
-import com.mytelblocker.mm.ITelephony;
+import com.mytelblocker.mm.activity.BlacklistActivity;
+import com.mytelblocker.mm.callback.ITelephony;
 import com.mytelblocker.mm.R;
 import com.mytelblocker.mm.preference.AppPreference;
 

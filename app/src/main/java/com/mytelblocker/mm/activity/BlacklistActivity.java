@@ -201,52 +201,111 @@ public class BlacklistActivity extends AppCompatActivity implements AdapterView.
 
     private void loadBankingServices() {
         fuckingMilitaryDataList.add(new DataHeader("Banking and finance"));
-        for (int i = 0; i < 5; i++) {
-            fuckingMilitaryDataList.add(new MilitaryData("Beer In English", "Beer in Myanmar"));
-        }
+        fuckingMilitaryDataList.add(new MilitaryData("Aung Myint Moh Min Insurance", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Aung Thitsar Oo Insurance", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Innwa Bank", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Myanmar Mobile Money", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Myawaddy Bank", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Mytel Pay", null));
     }
 
     private void loadCigarettes() {
         fuckingMilitaryDataList.add(new DataHeader("Cigarettes"));
-        for (int i = 0; i < 5; i++) {
-            fuckingMilitaryDataList.add(new MilitaryData("MyTel In English", "MyTel in Myanmar"));
-        }
+        fuckingMilitaryDataList.add(new MilitaryData("Premium Gold", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Red Ruby", null));
     }
 
     private void loadCommunications() {
         fuckingMilitaryDataList.add(new DataHeader("Communications"));
-        for (int i = 0; i < 5; i++) {
-            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
-        }
+        fuckingMilitaryDataList.add(new MilitaryData("MEC tel", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Mytel", null));
+
     }
 
     private void loadConstruction() {
         fuckingMilitaryDataList.add(new DataHeader("Construction"));
-        for (int i = 0; i < 5; i++) {
-            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
-        }
+        fuckingMilitaryDataList.add(new MilitaryData("Berger Paint", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Elephant King Cement (Sin Minn Cement)", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Myin Pyan Cement (Flying Horse Cement)", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Rhino Cement", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Rhinoceros Cemec (Cement)", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Sigma Cable", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Tristar Steel", null));
     }
 
     private void loadEntertainment() {
         fuckingMilitaryDataList.add(new DataHeader("Entertainment/Tourism"));
-        for (int i = 0; i < 5; i++) {
-            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
-        }
+        fuckingMilitaryDataList.add(new MilitaryData("Central Hotel Yangon", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Diamond White Restaurant Yangon", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Hanthawaddy Golf Course", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Indoor Skydiving", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Myawaddy Tours and Travel", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Myawaddy Travels and Tours", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Nan Myaing Café (Pwin Oo Lwin)", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Okkala Golf Resort", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Royal Sportainment Bowling Alley", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Royal Sportainment Complex", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Royal Sportainment Ice Skating", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Shwe Gandamar Ballroom (Pathein)", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Shwe Gandamar Grand Ballroom (Yangon)", null));
     }
 
 
     private void loadFoodAndDrink() {
         fuckingMilitaryDataList.add(new DataHeader("Food and drink"));
-        for (int i = 0; i < 5; i++) {
-            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
-        }
+        fuckingMilitaryDataList.add(new MilitaryData("Adipati Rice (AAPT Rice)", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Akasi Long Grain Rice", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Andaman Gold Blue", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Andaman Gold Special", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Black Shield Stout", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Dagon Beverages", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Dagon Dairy Plant", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Dagon Extra Strong Beer", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Dagon Fresh Lemon Sparkling", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Dagon Fresh Soda", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Dagon Gin", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Dagon Lager Beer", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Dagon Light Lager Beer", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Dagon Rum", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Dagon Single Malt Lager Beer", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Dagon Super Lager Beer", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Fleur Marguerite Sunflower Rice", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Kirin Ichiban", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Mandalay Beer", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Mandalay Brewery", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Mandalay Spirulina Anti-aging Beer", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Mandalay Strong Beer", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Mandalay Super Fresh Lager", null));
+        fuckingMilitaryDataList.add(new MilitaryData("MEC Myanmar Rice", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Moon Dairy Creamer", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Myanmar Beer", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Myanmar Brewery", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Myanmar Premium Beer", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Nan Myaing Coffee", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Nay Pyi Taw Water", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Ngwe Pin Lei Premium Marine Products", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Pyin Oo Lwin Coffee", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Royal Karaweik Sugar", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Seven7 Condensed Milk", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Shwe Phe Oo Teamix", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Sugarmec", null));
+        fuckingMilitaryDataList.add(new MilitaryData("Sun Condensed Milk", null));
     }
 
     private void loadHealthAndBeauty() {
         fuckingMilitaryDataList.add(new DataHeader("Health and Beauty Products"));
-        for (int i = 0; i < 5; i++) {
-            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
-        }
+            fuckingMilitaryDataList.add(new MilitaryData("Dentomec Toothbrushes", null));
+            fuckingMilitaryDataList.add(new MilitaryData("Dentomec Toothpaste", null));
+            fuckingMilitaryDataList.add(new MilitaryData("Life Coconut Oil (moisturiser)", null));
+            fuckingMilitaryDataList.add(new MilitaryData("Padonma Soap", null));
+            fuckingMilitaryDataList.add(new MilitaryData("Defence Services General Hospital", null));
+            fuckingMilitaryDataList.add(new MilitaryData("Defence Services Medical Research Centre", null));
+            fuckingMilitaryDataList.add(new MilitaryData("Defence Services Obstetrics, Gynaecology and Child Health Hospital", null));
+            fuckingMilitaryDataList.add(new MilitaryData("Defence Services Orthopaedics Hospital", null));
+            fuckingMilitaryDataList.add(new MilitaryData("Kan Thar Yar Hospital", null));
+            fuckingMilitaryDataList.add(new MilitaryData("Military Institute of Nursing and Paramedical Science", null));
+            fuckingMilitaryDataList.add(new MilitaryData("No.2 Military Hospital", null));
+            fuckingMilitaryDataList.add(new MilitaryData("Thamadaw Special Clinic", null));
     }
 
     private void loadIndustrial() {

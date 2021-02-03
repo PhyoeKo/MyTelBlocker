@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MyTel Blocker</string>
+    <string name="app_name">X</string>
 
     <!-- CallReceiver -->
     <string name="receiver_notify_call_rejected">Call rejected</string>

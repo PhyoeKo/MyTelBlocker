@@ -20,11 +20,11 @@ public class MilitaryDataViewHolder extends
     public MilitaryDataViewHolder(@NonNull View itemView) {
         super(itemView);
         tvEnglish = itemView.findViewById(R.id.tv_english);
-        tvBurmese = itemView.findViewById(R.id.tv_burmese);
+       // tvBurmese = itemView.findViewById(R.id.tv_burmese);
     }
 
     public void bindData(MilitaryData militaryData) {
         tvEnglish.setText(militaryData.getEnglishName());
-        tvBurmese.setText(militaryData.getBurmeseName());
+       // tvBurmese.setText(militaryData.getBurmeseName());
     }
 }

@@ -3,16 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="8dp"
+    >
 
     <TextView
         android:id="@+id/tv_english"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="@tools:sample/full_names" />
-
-    <TextView
-        android:id="@+id/tv_burmese"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="@tools:sample/full_names" />

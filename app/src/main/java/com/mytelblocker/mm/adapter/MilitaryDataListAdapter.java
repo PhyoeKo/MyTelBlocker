@@ -1,5 +1,6 @@
 package com.mytelblocker.mm.adapter;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -68,7 +69,8 @@ public class MilitaryDataListAdapter extends RecyclerView.Adapter<RecyclerView.V
     }
 
     public void setData(ArrayList<Object> fuckingMilitaryDataList) {
+        this.fuckingMilitaryDataList.clear();
         this.fuckingMilitaryDataList.addAll(fuckingMilitaryDataList);
+        notifyDataSetChanged();
     }
-
 }

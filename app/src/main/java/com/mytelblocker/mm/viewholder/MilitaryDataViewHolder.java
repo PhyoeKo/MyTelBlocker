@@ -15,7 +15,6 @@ public class MilitaryDataViewHolder extends
         RecyclerView.ViewHolder {
 
     public TextView tvEnglish, tvBurmese;
-    public LinearLayout llListItemMain;
 
     public MilitaryDataViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -25,6 +24,12 @@ public class MilitaryDataViewHolder extends
 
     public void bindData(MilitaryData militaryData) {
         tvEnglish.setText(militaryData.getEnglishName());
-        tvBurmese.setText(militaryData.getBurmeseName());
+        if (militaryData.getBurmeseName() != null) {
+            tvBurmese.setVisibility(View.VISIBLE);
+            tvBurmese.setText(militaryData.getBurmeseName());
+        } else {
+            tvBurmese.setVisibility(View.GONE);
+        }
+
     }
 }

@@ -7,6 +7,9 @@
     <string name="receiver_notify_private_number">Private number</string>
     <string name="receiver_notify_unknown_caller" translatable="false">Unknown caller</string>
     <string name="call_blocking_unsupported" translatable="false">Can\'t block calls in this Android version</string>
+    <string name="info">Info</string>
+    <string name="description">Data Source</string>
+    <string name="link">https://burmacampaign.org.uk/take-action/the-boycott-list/</string>
 
     <string-array name="testArray">
         <item>All</item>

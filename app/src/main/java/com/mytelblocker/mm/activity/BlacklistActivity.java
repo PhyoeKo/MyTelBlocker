@@ -121,41 +121,52 @@ public class BlacklistActivity extends AppCompatActivity implements AdapterView.
         }
     }
 
-    public void onAbout(MenuItem item) {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/eaglx/CallBlocker")));
-    }
-
-    private void loadBeer() {
-        fuckingMilitaryDataList.add(new DataHeader("Beer"));
-        for (int i = 0; i < 5; i++) {
-            fuckingMilitaryDataList.add(new MilitaryData("Beer In English", "Beer in Myanmar"));
-        }
-    }
-
-    private void loadTeleCom() {
-        fuckingMilitaryDataList.add(new DataHeader("Telecom"));
-        for (int i = 0; i < 5; i++) {
-            fuckingMilitaryDataList.add(new MilitaryData("MyTel In English", "MyTel in Myanmar"));
-        }
-    }
-
-    private void loadTransport() {
-        fuckingMilitaryDataList.add(new DataHeader("Transport"));
-        for (int i = 0; i < 5; i++) {
-            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
-        }
-    }
-
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         fuckingMilitaryDataList.clear();
         String selected = (String) parent.getSelectedItem();
         switch (selected) {
-            case "Telecom":
-                loadTeleCom();
+            case "Banking and finance":
+                loadBankingServices();
                 break;
-            case "Beer":
-                loadBeer();
+            case "Cigarettes":
+                loadCigarettes();
+                break;
+            case "Communications":
+                loadCommunications();
+                break;
+            case "Construction":
+                loadConstruction();
+                break;
+
+            case "Entertainment/Tourism":
+                loadEntertainment();
+                break;
+
+            case "Food and drink":
+                loadFoodAndDrink();
+                break;
+            case "Health and Beauty Products":
+                loadHealthAndBeauty();
+                break;
+
+            case "Industrial Estates/Offices":
+                loadIndustrial();
+                break;
+            case "International Trade":
+                loadInternationalTrade();
+                break;
+            case "Manufacturing":
+                loadManufacturing();
+                break;
+            case "Media":
+                loadMedia();
+                break;
+            case "Retail":
+                loadRetail();
+                break;
+            case "Trading companies":
+                loadTrading();
                 break;
             case "Transport":
                 loadTransport();
@@ -173,9 +184,117 @@ public class BlacklistActivity extends AppCompatActivity implements AdapterView.
     }
 
     private void loadDefault() {
-        loadBeer();
-        loadTeleCom();
-        loadTransport();
+        loadBankingServices();
+        loadCigarettes();
+        loadCommunications();
+        loadConstruction();
+        loadEntertainment();
+        loadFoodAndDrink();
+        loadHealthAndBeauty();
+        loadIndustrial();
+        loadInternationalTrade();
+        loadManufacturing();
+        loadMedia();
+        loadRetail();
         militaryDataListAdapter.setData(fuckingMilitaryDataList);
+    }
+
+    private void loadBankingServices() {
+        fuckingMilitaryDataList.add(new DataHeader("Banking and finance"));
+        for (int i = 0; i < 5; i++) {
+            fuckingMilitaryDataList.add(new MilitaryData("Beer In English", "Beer in Myanmar"));
+        }
+    }
+
+    private void loadCigarettes() {
+        fuckingMilitaryDataList.add(new DataHeader("Cigarettes"));
+        for (int i = 0; i < 5; i++) {
+            fuckingMilitaryDataList.add(new MilitaryData("MyTel In English", "MyTel in Myanmar"));
+        }
+    }
+
+    private void loadCommunications() {
+        fuckingMilitaryDataList.add(new DataHeader("Communications"));
+        for (int i = 0; i < 5; i++) {
+            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
+        }
+    }
+
+    private void loadConstruction() {
+        fuckingMilitaryDataList.add(new DataHeader("Construction"));
+        for (int i = 0; i < 5; i++) {
+            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
+        }
+    }
+
+    private void loadEntertainment() {
+        fuckingMilitaryDataList.add(new DataHeader("Entertainment/Tourism"));
+        for (int i = 0; i < 5; i++) {
+            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
+        }
+    }
+
+
+    private void loadFoodAndDrink() {
+        fuckingMilitaryDataList.add(new DataHeader("Food and drink"));
+        for (int i = 0; i < 5; i++) {
+            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
+        }
+    }
+
+    private void loadHealthAndBeauty() {
+        fuckingMilitaryDataList.add(new DataHeader("Health and Beauty Products"));
+        for (int i = 0; i < 5; i++) {
+            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
+        }
+    }
+
+    private void loadIndustrial() {
+        fuckingMilitaryDataList.add(new DataHeader("Industrial Estates/Offices"));
+        for (int i = 0; i < 5; i++) {
+            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
+        }
+    }
+
+    private void loadInternationalTrade() {
+        fuckingMilitaryDataList.add(new DataHeader("International Trade"));
+        for (int i = 0; i < 5; i++) {
+            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
+        }
+    }
+
+    private void loadManufacturing() {
+        fuckingMilitaryDataList.add(new DataHeader("Manufacturing"));
+        for (int i = 0; i < 5; i++) {
+            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
+        }
+    }
+
+    private void loadMedia() {
+        fuckingMilitaryDataList.add(new DataHeader("Media"));
+        for (int i = 0; i < 5; i++) {
+            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
+        }
+    }
+
+    private void loadRetail() {
+        fuckingMilitaryDataList.add(new DataHeader("Retail"));
+        for (int i = 0; i < 5; i++) {
+            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
+        }
+    }
+
+    private void loadTrading() {
+        fuckingMilitaryDataList.add(new DataHeader("Trading companies"));
+        for (int i = 0; i < 5; i++) {
+            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
+        }
+    }
+
+    private void loadTransport() {
+        fuckingMilitaryDataList.add(new DataHeader("Transport"));
+        for (int i = 0; i < 5; i++) {
+            fuckingMilitaryDataList.add(new MilitaryData("Transport In English", "Transport in Myanmar"));
+        }
     }
 }

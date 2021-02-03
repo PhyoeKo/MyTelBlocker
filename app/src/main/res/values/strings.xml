@@ -10,8 +10,19 @@
 
     <string-array name="testArray">
         <item>All</item>
-        <item>Telecom</item>
-        <item>Beer</item>
+        <item>Banking and finance</item>
+        <item>Cigarettes</item>
+        <item>Communications</item>
+        <item>Construction</item>
+        <item>Entertainment/Tourism</item>
+        <item>Food and drink</item>
+        <item>Health and Beauty Products</item>
+        <item>Industrial Estates/Offices</item>
+        <item>International Trade</item>
+        <item>Manufacturing</item>
+        <item>Media</item>
+        <item>Retail</item>
+        <item>Trading companies</item>
         <item>Transport</item>
     </string-array>
 
